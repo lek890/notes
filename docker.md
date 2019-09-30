@@ -1,4 +1,4 @@
-Getting started with docker
+``Getting started with docker``
 
 Say, you want an instance of nginx to be run on a container - what should you do?
 
