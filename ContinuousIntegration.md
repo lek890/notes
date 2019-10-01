@@ -1,4 +1,4 @@
 **Continuous Integration**
 
-CI with gitlab
-CI in github with CircleCI
+1. CI with gitlab
+2. CI in github with CircleCI
