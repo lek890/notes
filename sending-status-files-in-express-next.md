@@ -1,4 +1,4 @@
-Serve static files from NextJs-Express app
+**Serve static files from NextJs-Express app**
 
 Generally, a next - express app would be serving dynamic pages of what your app is intended to serve. For example, on a
 e-commerce site, it would a page which gives a list of products - say items categorized as kitchen, living room etc.
