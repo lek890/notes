@@ -12,13 +12,14 @@ the folders that you are going to open as public for static access. So if you se
 folder in your express app, then you can access anything inside the public folder using relative paths. For example, you could
 retrieve
 
+```
 public
     ---all-cats.txt
     ---/images
       .../cat-pic.jpeg
     ---/notes/cats
         .../cat-notes.txt
-      
+```   
 as
       
 abc.com/all-cats.txt
@@ -28,11 +29,15 @@ abc.com/notes/cats/cat-notes.txt
 To acheive this you can use
 `app.use(express.static( folder_name ))` to configure your app when starting the application.
 
-ex: app.use( express.static('public') )
-
+ex: 
+```
+app.use( express.static('public') )
+```
 if you have internationalization, then you can even do
 
-`app.use( express.static(`public/${YOUR_REQUIRED_FOLDER}`) )`
+```
+app.use( express.static(`public/${YOUR_REQUIRED_FOLDER}`) )`
+```
 
 In some cases, the urls to retreive the files may not be the same as the file name. For example, the sitemaps_index.xml may
 have to be retrieved from a url `abc.com/sitemaps`. In that case, you could achieve this by checking the url and sending
@@ -41,16 +46,20 @@ directory where you have access to the response object.
 
 Simply put, if my url is `sitemaps`
 
+```
 if ( asPath.match(/sitemaps/i)){
   const options = { //set your header options here }
   res.sendFile('sitemaps_index.xml', options)
 }
+```
 
 there is a callback option available if you need to do error handling
+```
 if ( asPath.match(/sitemaps/i)){
   const options = { //set your header options here }
   res.sendFile('sitemaps_index.xml', options, (err) => console.log('some error occured', err))
 }
+```
 
 Read more here :
 https://expressjs.com/en/starter/static-files.html
