@@ -33,3 +33,13 @@ Now, we could trial run the patch to see if it would work without errors
 If this is successful, go ahead run the `am` command to patch it.
 
 `git am mypatch.patch`
+
+
+
+The same can be used for apply diff patches
+
+`git diff > mypatch.patch`
+
+to apply it,
+
+`git apply mypatch.patch`
