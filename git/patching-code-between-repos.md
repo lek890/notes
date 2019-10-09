@@ -36,9 +36,15 @@ If this is successful, go ahead run the `am` command to patch it.
 
 
 
+**To patch the diff **
+
 The same can be used for apply diff patches
 
 `git diff > mypatch.patch`
+
+or for staged changes, 
+
+`git diff --cached > mypatch.patch`
 
 to apply it,
 
