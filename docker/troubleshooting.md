@@ -11,3 +11,15 @@ So, `docker run -d nginx-v2 -p 8080:90` is wrong
 and
 
 `docker run -d -p 8080:90 nginx-v2` is right.
+
+
+2. Docker build gives “unable to prepare context: context must be a directory:
+
+So I was specifying the docker file to build. It is okay, but needed to point to the directory for context.
+If inside the directory, `.` would do.
+
+`docker build -t ubuntu-test:latest -f Dockerfile.custom .`
+
+or 
+
+`docker build -t ubuntu-test:latest .`
