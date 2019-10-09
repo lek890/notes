@@ -5,19 +5,19 @@ we could use git patch.
 
 To get the changes in the last commit, use
 
-`git format-patch -k --stdout HEAD^`
+`git format-patch --stdout HEAD^`
 
 To get these changes on a file, use without stdout flag
 
-`git format-patch -k HEAD^`
+`git format-patch HEAD^`
 
 This would create a file, which git would name relating to the commit msg. We could specify the name also.
 
-`git format-patch -k HEAD^ > mypatch.patch`
+`git format-patch HEAD^ > mypatch.patch`
 
 To the changes between two commits, we could use
 
-`git format-patch -k --stdout COMMIT_ID_1..COMMIT_ID_2`
+`git format-patch --stdout COMMIT_ID_1..COMMIT_ID_2`
 
 
 *To apply the patch to the destination branch*
