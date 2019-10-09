@@ -36,7 +36,7 @@ If this is successful, go ahead run the `am` command to patch it.
 
 
 
-**To patch the diff **
+**To patch the diff**
 
 The same can be used for apply diff patches
 
