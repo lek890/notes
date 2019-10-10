@@ -87,10 +87,10 @@ A sample `.eslintrc`
   },
   "parser": "@typescript-eslint/parser"
 }
-`
+```
 A sample `.eslintrc`
 
-`{
+```{
   "printWidth": 120,
   "trailingComma": "all",
   "singleQuote": true
