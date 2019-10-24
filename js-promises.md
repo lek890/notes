@@ -9,7 +9,7 @@ automatically.
 
 example
 
-`
+```
 async function giveFive() {
   return 5;
 }
@@ -17,16 +17,17 @@ async function giveFive() {
 giveFive().then(alert)
 
 // would alert 5
-`
+```
 
 this is same as 
 
 
-`
+```
 async function giveFive(){
   Promise.resolve(5);
 }
-`
+
+```
 
 So async ensures that the function returns a promise.
 
@@ -40,7 +41,7 @@ Keyword `await` makes Javascript wait until the promise the promise that is reso
 for ex:
 
 
-`
+```
 async function giveSeven() {
 
 const aPromiseThatResolvesSoon = new Promise(  (res, rej) => setTimeout( ()  => res('7'), 1000 )  )
@@ -53,7 +54,7 @@ alert(result)
 }
 
 giveSeven()
-`
+```
 
 
 
