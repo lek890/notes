@@ -9,7 +9,7 @@ Bit was primarily build for code sharing in multirepo  codebases.
 Before knowing what is lerna, we should know what is monorepo. 
 
 Monorepo - The overhead of managing multiple packages in multiple repositories lead to the concept of 
-monorepo.
+monorepo. Monorepo is a source control pattern where all the source code is kept in a single repository. Multirepos are where parts of your project go into different repos.
 
 Going monorepo means turning a repo into a multipackage repo. From this repo we could publish multiple 
 packages. This belongs to multi-repo architecture.
