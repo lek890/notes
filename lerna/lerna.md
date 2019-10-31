@@ -3,7 +3,7 @@
 
 ***What is lerna?***
 
-Lerna is a monorepo tool. There are other tools like bit, yarn, git submodule etc for the same purpose.  
+Lerna is a monorepo tool. There are other tools like bit, yarn, npm, git submodule etc for the same purpose.  
 Bit was primarily build for code sharing in multirepo  codebases.
 
 Before knowing what is lerna, we should know what is monorepo. 
