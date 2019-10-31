@@ -48,7 +48,7 @@ When faced with multiple smaller repos problem as noted above, people could swit
 the problem now is that many deployment tools expect exactly one configuration file. This is a problem 
 when multiple deployable projects are in a repo because they all expect a config file of same configuration.
 
-7.Size
+ 7.Size
 
 Large repos will be hard to work on on a daily basis, developer experience would be bad.
 
