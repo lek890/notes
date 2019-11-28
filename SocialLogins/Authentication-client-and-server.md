@@ -7,3 +7,8 @@ https://ole.michelsen.dk/blog/social-signin-spa-jwt-server.html
 https://stackoverflow.com/questions/27294165/how-should-a-facebook-user-access-token-be-consumed-on-the-server-side
 
 https://codeburst.io/node-js-rest-api-facebook-login-121114ee04d8
+
+
+
+https://medium.com/@felipedutratine/authenticate-a-rest-api-with-facebook-5ef19db5d2a
+https://codeburst.io/node-js-rest-api-facebook-login-121114ee04d8
