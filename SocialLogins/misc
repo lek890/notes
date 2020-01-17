@@ -1,0 +1,11 @@
+Safari wouldn't set third party cookies. Bcz it is by default disabled in privacy settings.
+To set the cookies, the external site has to be atleast a subdomain of the current site. 
+So in local, set a hostname for localhost as the subdomain of the the service you are 
+
+
+
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 
+gives pem file
+
+https://devcenter.heroku.com/articles/ssl-certificate-self
+>> creates self crt and key
