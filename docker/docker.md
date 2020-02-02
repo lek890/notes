@@ -18,3 +18,10 @@ and you can access it on the port `2000`
 #todo
 #samples
 
+docker stop all containers
+
+docker run -aq
+
+docker delete all containers
+
+docker rm $(docker ps -aq)
