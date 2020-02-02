@@ -25,3 +25,7 @@ docker run -aq
 docker delete all containers
 
 docker rm $(docker ps -aq)
+
+remove all images
+
+docker rmi $(docker images -q)
