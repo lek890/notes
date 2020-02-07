@@ -13,7 +13,7 @@ context.
 
 Once the build is successful, we will have the image in our local. We can see it with the `docker images` command.
 
-To run a docker image, use as usuall
+To run a docker image, use as usual
 
 'docker run -d {CONTAINER_ID}'
 
