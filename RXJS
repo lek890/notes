@@ -84,3 +84,20 @@ Internally to the Subject, subscribe does not invoke a new execution that delive
 
 Every Subject is an Observer. It is an object with the methods next(v), error(e), and complete(). To feed a new value to the Subject, just call next(theValue), and it will be multicasted to the Observers registered to listen to the Subject.
 
+subjects are multicast - that is many observers can share the single execution of the subject where as  in a plain observable, 
+the each observer has an independent execution of the observable.
+for example,  
+if we send random number to  subjects observers, then all of them get the same  number.
+where as in a normal observable, each of them  will get a different value.
+
+note that we can make a  normal observable to be a subject. under  the hood it actually works the subject way. 
+also refCount can be used as well to acheive the same.
+
+there are some variants of subjects like
+1. replaySubject
+2. behaviourSubject
+3. AsyncSubject
+
+Scheduler
+
+
