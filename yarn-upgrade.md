@@ -34,21 +34,21 @@ Look out for the first non zero digit in a version and allow changes unless the 
 
 example : 
 ```
-2.0.0 - 3.0.0  expands to >=2.0.0 and <=3.0.0
-2.0 - 3 expands to >=0.2.0 and <=3.0.0
+2.0.0 - 3.0.0  allows >=2.0.0 and <=3.0.0
+2.0 - 3 allows >=0.2.0 and <=3.0.0
 ```
 ###X-ranges
 
 X, x or * can be used
 ```
-* means any version and expands to >=0.0.0
-4.x means match major versions and expands to >=4.0.0 and <3.0.0 
-3.1.x means match major and minor verisons and expands to >=3.1.0 and <3.2.0
+* means any version and allows >=0.0.0
+4.x means match major versions and allows >=4.0.0 and <3.0.0 
+3.1.x means match major and minor verisons and allows >=3.1.0 and <3.2.0
 ```
 ###Tilde ranges
 ```
-~3 means allow allow minor versions and expands to >=3.0.0 and <4.0.0
-~3.2 means allow patch changes and expands to >=3.2.0 and <3.3.0
-~3.2.1 means allow patch changes from the patch specified and expands to >=3.2.1 and <3.3.0
+~3 means allow minor versions and allows >=3.0.0 and <4.0.0
+~3.2 means allow patch changes and allows >=3.2.0 and <3.3.0
+~3.2.1 means allow patch changes from the patch specified and allows >=3.2.1 and <3.3.0
 ```
 Read more here [Advanced version ranges](https://classic.yarnpkg.com/en/docs/dependency-versions#toc-advanced-version-ranges)
