@@ -1,4 +1,4 @@
-##Yarn upgrade and package.json
+#Yarn upgrade and package.json
 
 Problem : Why doesn't yarn upgrade update the package.json?
 
