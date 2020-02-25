@@ -1,4 +1,4 @@
-Reconciliation
+**Reconciliation**
 
 Reconciliation means the restoration of friendly relations or religiously, the end of enstrangement. :D
 In React, reconciliation is the term used to denote how the component gets rerendered when something changes.
