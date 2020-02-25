@@ -16,7 +16,7 @@ Note: When a component updates, the instance stays the same, so that state is ma
 **The Diffing Algorithm**
 
 1. Dom elements of different types
-
+```
 <div>
   <Counter />
 </div>
@@ -24,19 +24,19 @@ Note: When a component updates, the instance stays the same, so that state is ma
 <span>
   <Counter />
 </span>
-
+```
 Solution: destroy old Counter, mount new Counter
 
 2. Dom elements of the same type
-
+```
 <div className="before" title="stuff" />
 
 <div className="after" title="stuff" />
-
+```
 Solution: attributes are compared. Here, its smart enough to know only the classname changed. So only that it updated.
 
 3. Recursing on children
-
+```
 <ul>
   <li>first</li>
   <li>second</li>
@@ -47,7 +47,7 @@ Solution: attributes are compared. Here, its smart enough to know only the class
   <li>second</li>
   <li>third</li>
 </ul>
-
+```
 Solution: Smart  to know only one item got added. Updates only that.
 
 GOTCHA: adding a new key to the beginning is a bad idea. React would tear all down.
