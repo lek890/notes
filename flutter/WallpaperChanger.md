@@ -1,4 +1,4 @@
-##Wallpaper changer app
+#Wallpaper changer app
 
 Scheduling everyday
 
