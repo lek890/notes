@@ -33,3 +33,5 @@ docker rmi $(docker images -q)
 docker logs -f image_name
 
 docker events&
+
+docker run -td <image name> t is ttl that keeps the container alive
