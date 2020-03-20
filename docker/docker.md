@@ -31,3 +31,5 @@ remove all images
 docker rmi $(docker images -q)
 
 docker logs -f image_name
+
+docker events&
