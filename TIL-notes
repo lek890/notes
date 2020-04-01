@@ -201,8 +201,7 @@ plugins: [
         BACKEND_URL: JSON.stringify("http://localhost:5000/api")
     })
   ]
-`
-``
+```
 
 14. to use bit components using yarn
 
@@ -261,9 +260,57 @@ Red hooks
 - useEffect
 - useLayoutEffect
 
+useMemo is useful for expensive calculations, useCallback is useful for passing callbacks needed for optimized child components.
+
+##BehaviourSubject.getValue()
+
+A Subject or Observable doesn't have a current value. When a value is emitted, it is passed to subscribers and the Observable is done with it.
+
+If you want to have a current value, use BehaviorSubject which is designed for exactly that purpose. BehaviorSubject keeps the last emitted value and emits it immediately to new subscribers.
+
+It also has a method getValue() to get the current value.
+
+## boilerplate app-name
+function boilerplate() { git clone https://github.com/lek890/react-typescript-webpack-boilerplate.git; mv react-typescript-webpack-boilerplate $1; cd $1; yarn; yarn start;}
+
+## Markup
+
+```
+    [link](#toSomewhere)
+    ###<a name="somewhere">A heading
+
+  or anchor can be used
+    ###<a href="#somewhere">A heading
+
+```
+
+1. Object.entries => gives each entry of object as an array.
+2. to update a key in an object using a variable 
+
+obj = {[variable]: value}
+
+3. to import default export using alias
+
+import {default as something} from somewhere
+
+
+
+
+
 
 //todo:
 
 memoisation
 layouteffect
 https://medium.com/@sdolidze/react-hooks-memoization-99a9a91c8853
+
+yarn lock, package json lock and stuff
+typescript handbook
+
+
+https://www.pluralsight.com/guides/using-react-refs-typescript
+https://stackoverflow.com/questions/57750777/generics-error-with-forwardref-property-ref-does-not-exist-on-type-intrinsic
+
+eslint-plugin-react-hooks
+
+build a slider
