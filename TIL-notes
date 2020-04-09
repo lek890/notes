@@ -294,6 +294,57 @@ obj = {[variable]: value}
 import {default as something} from somewhere
 
 
+## nginx 
+
+proxy pass rest of a url path 
+
+```
+location ~* ^/api/(.+)$ {
+   proxy_pass      http://192.168.0.108:8080/$1;
+}
+``` 
+proxy pass rest of a url path (inlcuding get args)
+
+```
+location ~* ^/service/(.*) {
+  proxy_pass http://apache/$1$is_args$args;
+}
+```
+
+
+## Autocomplete in vscode zsh terminal
+
+```
+brew install zsh //for zsh 
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# add the following in ~/.zshrc
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+## Turn off git branch pager 
+
+git config --global pager.branch false
+
+## Merge without switching branches
+
+for forward merge 
+
+```
+git fetch <remote> <sourceBranch>:<destinationBranch>
+
+# Merge local branch foo into local branch master,
+# without having to checkout master first.
+# Here `.` means to use the local repository as the "remote":
+git fetch . foo:master
+
+# Merge remote branch origin/foo into local branch foo,
+# without having to checkout foo first:
+git fetch origin foo:foo
+
+#for non fastforward 
+git fetch <remote> +<remoteBranch>:<localBranch>
+```
+https://stackoverflow.com/questions/3216360/merge-update-and-pull-git-branches-without-using-checkouts
+
 
 
 
