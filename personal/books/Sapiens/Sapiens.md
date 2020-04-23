@@ -1,13 +1,13 @@
 Sapiens - A brief history of humankind
 
-We good this book a few months back and now is the time destined to read it. I want to write about the progress I make with
-this book, without explaining it, but just noting down the points I liked on the chapter I just read.
+I want to write about the progress I make with
+this book, without explaining it, just noting down the points I liked on the chapter I just read.
 
 Apr 23, 2020
 
-I read the first chapter today. The main point that sticks with me are these - 
+I read the first chapter today. The points that sticks with me are these - 
 
-1. we often think of us as the only humans but that's not true
+1. we often think of us as the only humans
 When we, Home Sapiens (Wise Man) emerged in Africa, there were other humans living in others parts of the world.
 The Neanderthals (Man from the Neanderthal valley) were in Europe. The Homo Erectus(Upright Man) were Eastern Asia. 
 The Homo Floresienis (Man from the Flores island) lived in small islands of Indonesia. 
