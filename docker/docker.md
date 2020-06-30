@@ -4,11 +4,11 @@ Say, you want an instance of nginx to be run on a container - what should you do
 
 1. You should find the image of nginx from docker hub or where ever it is.
 2. do `docker run -d {IMAGE_NAME}`. This command automatically pulls and starts the docker on an ip. You can see the details
-by running the command - `docker ps -a`. 
+   by running the command - `docker ps -a`.
 3. `docker ps` or `docker container ls` would list all the containers available.
-4. If you want to specify the ports in which the container should provide the service you want, you can specify it as an 
-argument like `docker run -d -p 2000:80`. Now the port 80 in the container is mapped to the port 2000 on the host machine 
-and you can access it on the port `2000`
+4. If you want to specify the ports in which the container should provide the service you want, you can specify it as an
+   argument like `docker run -d -p 2000:80`. Now the port 80 in the container is mapped to the port 2000 on the host machine
+   and you can access it on the port `2000`
 5. If you want to remove the container, use command `docker rm '{CONTAINER_ID}'`
 6. To start the container, pretty straight forward - `docker start {CONTAINER_ID}`
 7. To stop the container, again straight forward - `docker stop {CONTAINER_ID}`
@@ -18,17 +18,33 @@ and you can access it on the port `2000`
 #todo
 #samples
 
+- docker run nginx from latest
+
+docker run -v ./nginx/:/etc/nginx:ro -p 5000:80 --name til-nginx nginx:latest
+
+- copy files
+
+docker cp ./:/etc/nginx/
+
+- docker build
+
+in folder where dockerfile exist
+docker build --tag testing:1.0 .
+
+- realtime logs of started container  
+  docker logs -f <container-identifier>
+
 docker stop all containers
 
 docker run -aq
 
 docker delete all containers
 
-docker rm $(docker ps -aq)
+docker rm \$(docker ps -aq)
 
 remove all images
 
-docker rmi $(docker images -q)
+docker rmi \$(docker images -q)
 
 docker logs -f image_name
 
