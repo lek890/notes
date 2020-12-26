@@ -82,3 +82,8 @@ and when main.js is requested html file is served. so parsing failed.
 to fix it make the public path in webpack config to be '/'.
 
 now `<script type="text/javascript" src="/main.js">` is generated and will work properly.
+
+
+Other links:
+
+Webpack intergation to non create-react-app projects: https://www.pluralsight.com/guides/react-typescript-webpack
