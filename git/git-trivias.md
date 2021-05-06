@@ -23,3 +23,9 @@ git fetch <remote> +<remoteBranch>:<localBranch>
 ```
 
 https://stackoverflow.com/questions/3216360/merge-update-and-pull-git-branches-without-using-checkouts
+
+
+remove and add new remote
+
+git remote remove origin
+git remote add origin <remote-name>
